@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Walidator danych</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+    <div class="blur"></div>
+	<section id="task-frontend">
+		<span class="basic-title">Dołącz do nas!</span>
+
+		<form method="POST">
+		    <input type="text" id="first-name" name="first-name" placeholder="Imię (min. 3 znaki)"/>
+		    <input type="text" id="last-name" name="last-name" placeholder="Nazwisko (min. 3 znaki)"/>
+			<input type="email" id="email" name="email" placeholder="e-mail"/>
+
+			<span>Sekcja:</span>
+            <div class="checkboxes">
+            <input type="radio" id="frontend-checkbox" name="section" value="frontend">
+            <label for="frontend-checkbox">Frontend</label>
+            <input type="radio" id="backend-checkbox" name="section" value="backend">
+            <label for="backend-checkbox">Backend</label>
+            <input type="radio" id="mobile-checkbox" name="section" value="mobile">
+            <label for="mobile-checkbox">Mobile</label>
+            <input type="radio" id="graphics-checkbox" name="section" value="graphics">
+            <label for="graphics-checkbox">Grafika</label>
+            </div>
+            <div class="form-message"></div>
+            
+            <input type="submit" value="Prześlij">
+		</form>
+	</section>
+    
+<script type="text/javascript" src="js/validation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "arial", cursive;
+  color: #44803F;
+  background-image: url("/img/Background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blur {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+#task-frontend {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #B4CF66;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 1em black;
+  transform: translateY(100px);
+}
+
+#task-frontend .basic-title {
+  font-size: 18px;
+}
+
+#task-frontend .form-line {
+  border: 1px solid rgb(12, 82, 23);
+}
+
+#task-frontend input[type="text"],
+#task-frontend input[type="email"] {
+  display: block;
+  margin: 15px auto;
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px black;
+  outline: none;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+#task-frontend span {
+  display: block;
+  font-size: 18px;
+  margin: 20px 0 10px 0;
+  font-weight: bold;
+}
+
+#task-frontend input[type="radio"] {
+  text-transform: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background-color: white;
+  transform: translateY(4px);
+  box-shadow: 0 0 2px black;
+}
+
+#task-frontend input[type="radio"]:hover {
+  cursor: pointer;
+  background-color: rgb(187, 184, 184);
+}
+
+#task-frontend input[type="radio"]:checked {
+  background-image: url("/img/checkmark.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#task-frontend input[type="submit"] {
+  box-sizing: border-box;
+  display: block;
+  color: white;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  margin: 20px auto;
+  background-color: rgb(12, 82, 23);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 3px black;
+  padding: 10px 0;
+}
+
+#task-frontend input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(12, 82, 23);
+}
+
+.field-error {
+  outline: 2px solid red !important;
+}
+
+.checkboxes {
+  margin-bottom: 20px;
+}
